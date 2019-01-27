@@ -1,0 +1,77 @@
+# Extreme Programming
+
+## Values
+
+The five core values of Extreme Programming are:
+
+-   Communication
+-   Feedback
+-   Simplicity
+-   Respect
+-   Courage
+
+## Practices
+
+### Balanced team
+
+An autonomous team that has people with a variety of skills and perspectives that work together towards a common goal.
+
+### Pair programming
+
+Programming practice in which two developers work on the same workstation but with two monitors, keyboards, and mice and a mirrored display.
+
+##### Ping-Pong Technique
+
+Ping Pong pairing is the practice in which one developer writes a failing test, and the pair writes the logic to make the test pass. Once the test has passed, another test is written by the same person, then the next person writes the logic for that failing test. And so forth.
+
+##### Benefits
+
+- Diffusion of knowledge
+- Cleaner and better designed code through lively discussion of patterns and techniques to use
+- Better conversation about what is being built and what is needed and what is not.
+
+---
+Test-Driven development
+---
+
+Test-driven development is an approach to software development in which for any given slice of logic to be built in the software system, the test for that logic is written first, and only then is the actual logic written to satisfy the test case.
+
+### Benefits
+
+- "A change in one place can affect behavior someplace else; unless we have a test in place, we might never know about it." - *Working Effectively with Legacy Code*
+- "We know that we should refactor it to make it more understandable, but then there is that issue of testing again. If we don’t have tests, how do we know that we are refactoring correctly?" -- *Working Effectively with Legacy Code*
+
+#### Red-Green Refactor Loop
+
+- A failing test is written first (RED)
+- Logic is written to satisfy the condition under test (GREEN)
+- If needed, improve code clarity, cleanliness, space or runtime complexity of logic (REFACTOR)
+
+In the primary case, the 'happy path' of any given logic is written first. Followed by additional edge cases or non-happy paths.
+
+#### Spiking
+
+If wading into territories that are unknown on how to approach writing a test, it can be useful to 'spike', or build without tests, on a piece of logic to gain an understanding of how it would conceptually work. Spiking is followed by stepping back and, with the new understanding of a piece of logic, following TDD to slowly introduce the logic into the system.
+
+---
+
+Releases
+---
+
+### Small and frequent releases
+
+Code that is checked in to the version control system should be built (incuding running of tests, packaging, publishing artifacts) by a continuous integration system, and deployed to a higher environment such as PCF. This leads to being able to accept or reject user stories quickly and effectively. In addition, it allows the stakeholders to review what's been built, as well as ability to test the features built with potential users.
+
+On every commit to `master`...
+- Test
+- Build
+- Package
+- Publish
+- Deploy
+
+Technical retrospectives
+---
+
+To be able to learn effectively if a process or a technique is working or not, it is important to hold technical retrospectives (i.e. 'tech forums', 'techtros') to discuss and acknowledge winning strategies and techniques, as well as things that are just not working and should be scrapped.
+
+This is also a place to perform show+tell by developers to showcase some new and interesting things in the code that every one should be on the same page about.
