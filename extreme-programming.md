@@ -3,7 +3,13 @@
 - [Principles, Values, Practices](#principles-values-practices)
 - [Why XP?](#why-xp)
 - [What is XP?](#what-is-xp)
-- [XP Values](#values)
+- [XP Values](#xp-values)
+  - [Communication](#communication)
+  - [Feedback](#feedback)
+  - [Simplicity](#simplicity)
+  - [Respect](#respect)
+  - [Courage](#courage)
+- [XP Principles](#xp-principles)
 - [Practices](#practices)
   - [Balanced Team](#balanced-team)
   - [Iteration Planning](#iteration-planning)
@@ -21,12 +27,12 @@
 
 ## Principles, Values, Practices
 
-__Principles are domain-specific guidelines for life.__ [1]
+__Principles are domain-specific guidelines for life.__ [Source][1]
 
 __Values are the roots of the things we like and don't like
-    in a situation.__ [1]
+    in a situation.__ [Source][1]
 
-__Practices are evidence of values.__ [1]
+__Practices are evidence of values.__ [Source][1]
 
 ## Why XP
 
@@ -61,23 +67,65 @@ XP seeks to address each of the risks outlined above, and will be described belo
 XP is a software development discipline that addresses risk at all levels of the
 development process.
 
-__Stay aware. Adapt. Change.__ [1]
+__Stay aware. Adapt. Change.__ [Source][1]
 
-__You don't wait a long time to find out if you were going the wrong way.__ [1]
+__You don't wait a long time to find out if you were going the wrong way.__ [Source][1]
 
-## Values
+## XP Values
 
-__Values bring purpose to practices__ [1]
+__Values bring purpose to practices__ [Source][1]
 
 Values drive practices.
 
-The five core values of Extreme Programming are:
+### Communication
 
-- Communication
-- Feedback
-- Simplicity
-- Respect
-- Courage
+Communication is integral to creating cooperation and a sense of team
+
+### Feedback
+
+__The sooner you know, the sooner you can adapt__ [Source][1]
+
+### Simplicity
+
+"What is the simplest thing that could possibly work?"
+
+Communication helps achieve greater simplicity by introducing clarifications and eliminating any
+unnecessary work.
+
+### Respect
+
+Respect the project and each other. If not, nothing can save the project from its demise.
+
+### Courage
+
+__The courage to speak truths, pleasant or unpleasant, fosters communication and trust__ [Source][1]
+
+## XP Principles
+
+- **Humanity** - software is developed by humans. To thrive, humans need:
+  - Safety - from hunger, harm, threats. Loss of job included.
+  - Accomplishment - opportunity and ability to contribute to society
+  - Belonging - receive validation from a group they identify with
+  - Growth - expanding skills and perspective
+  - Intimacy - ability to understand and be understood by others 
+- **Economics** - software must have business value, deliver on business needs
+- **Mutual Benefit** - maintaining working relationships is paramount. Practices that
+    benefit me now, later, and customers as well.
+- **Self-similarity** - copying the structure of one solution into a new context, even
+    at different scales.
+- **Improvement** - nothing is perfect, but you can perfect your process, design, stories.
+- **Diversity** - teams need differing skills, attitudes, perspectives to see problems
+    in a different light, offering differing solutions
+- **Reflection** - teams reflect and analyze what went right, what went wrong to
+    see if they've succeeded, failed, or learned something new.
+- **Flow** - delivering a steady flow of valuable software by engaging in all the
+    activities of development simultaneously.
+- **Opportunity** - problems need to turn into opportunities for learning and improvement.
+- **Redundancy** - critical, difficult problems should be solved in several different ways.
+- **Failure** - failure imparts knowledge
+- **Quality** - making a big change efficiently in small, safe steps.
+- **Baby Steps** - small, incremental steps over big changes all at once.
+- **Accepted Responsibility** - responsibility is accepted, not assigned.
 
 ## Practices
 
@@ -103,8 +151,9 @@ Addresses Risks:
 ### Pair programming
 
 ![Communication](https://img.shields.io/badge/Value-Communication-brightgreen.svg)
-
-![Communication](https://img.shields.io/badge/Value-Feedback-brightgreen.svg)
+![Simplicity](https://img.shields.io/badge/Value-Simplicity-brightgreen.svg)
+![Feedback](https://img.shields.io/badge/Value-Feedback-brightgreen.svg)
+![Courage](https://img.shields.io/badge/Value-Courage-brightgreen.svg)
 
 Programming practice in which two developers work on the same workstation
 but with two monitors, keyboards, and mice and a mirrored display.
@@ -163,10 +212,10 @@ following TDD to slowly introduce the logic into the system.
 #### Benefits of TDD
 
 - "A change in one place can affect behavior someplace else; unless we have a
-    test in place, we might never know about it." [2]
+    test in place, we might never know about it." [Source][2]
 - "We know that we should refactor it to make it more understandable, but then
     there is that issue of testing again. If we don’t have tests, how do we know
-    that we are refactoring correctly?" -- [2]
+    that we are refactoring correctly?" [Source][2]
 
 ### Releases
 
@@ -192,9 +241,7 @@ On every commit to `master`...
 Addresses Risks:
 
 ![Schedule Slippage](https://img.shields.io/badge/Risk-Schedule_Slippage-red.svg)
-
 ![Project Cancelled](https://img.shields.io/badge/Risk-Project_Cancelled-red.svg)
-
 ![Business Changes](https://img.shields.io/badge/Risk-Business_Changes-red.svg)
 
 ### Technical retrospectives
@@ -209,9 +256,9 @@ This is also a place to perform show+tell by developers to showcase
 some new and interesting things in the code that every one should be
 on the same page about.
 
-## References
+---
 
-1. [Extreme Programming Explained: Embrace Change (2nd Ed., 2004) -
-    Cynthia Andres, Kent Beck](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
-2. [Working Effectively with Legacy Code -
-    Michael Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052)
+[1]: https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658 
+    "Extreme Programming Explained: Embrace Change (2nd Ed., 2004) - Cynthia Andres, Kent Beck"
+[2]: https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052 
+    "Working Effectively with Legacy Code - Michael Feathers"
