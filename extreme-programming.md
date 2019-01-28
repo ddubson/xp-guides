@@ -4,13 +4,15 @@
 - [XP Values](#values)
 - [Practices](#practices)
   - [Balanced Team](#balanced-team)
+  - [Iteration Planning](#iteration-planning)
+    - [Estimation](#estimation)
   - [Pair Programming](#pair-programming)
     - [Ping-Pong Technique](#ping-pong-technique)
     - [Benefits of PP](#benefits-of-pair-programming)
   - [TDD](#test-driven-development)
     - [Red-Green-Refactor](#red-green-refactor-loop)
     - [Spiking](#spiking)
-    - [Benefits](#benefits-of-tdd)
+    - [Benefits of TDD](#benefits-of-tdd)
   - [Releases](#releases)
     - [Small + Frequent](#small-and-frequent-releases)
   - [Technical Retrospectives](#technical-retrospectives)
@@ -47,6 +49,7 @@ The five core values of Extreme Programming are:
 - Respect
 - Courage
 
+---
 ## Practices
 
 ### Balanced team
@@ -54,7 +57,25 @@ The five core values of Extreme Programming are:
 An autonomous team that has people with a variety of skills and perspectives
 that work together towards a common goal.
 
+---
+### Iteration Planning
+
+TBD
+
+#### Estimation
+
+TBD
+
+Addresses Risks:
+
+![Staff Turnover](https://img.shields.io/badge/Risk-Staff_Turnover-red.svg)
+
+---
 ### Pair programming
+
+![Communication](https://img.shields.io/badge/Value-Communication-brightgreen.svg)
+
+![Communication](https://img.shields.io/badge/Value-Feedback-brightgreen.svg)
 
 Programming practice in which two developers work on the same workstation
 but with two monitors, keyboards, and mice and a mirrored display.
@@ -75,22 +96,21 @@ then the next person writes the logic for that failing test. And so forth.
     what is not.
 
 ---
-## Test-Driven development
+### Test-Driven development
 
 Test-driven development is an approach to software development in which for
 any given slice of logic to be built in the software system, the test for that
 logic is written first, and only then is the actual logic written to satisfy
 the test case.
 
-### Benefits of TDD
+#### Run on every change
 
-- "A change in one place can affect behavior someplace else; unless we have a
-    test in place, we might never know about it." -
-    *Working Effectively with Legacy Code*
-- "We know that we should refactor it to make it more understandable, but then
-    there is that issue of testing again. If we don’t have tests, how do we know
-    that we are refactoring correctly?" --
-    *Working Effectively with Legacy Code*
+Tests that are written and made to pass, are thereafter run on every single
+change to make sure that the system is as per specification.
+
+Addresses Risks:
+
+![System Goes Sour](https://img.shields.io/badge/Risk-System_Goes_Sour-red.svg)
 
 #### Red-Green Refactor Loop
 
@@ -110,11 +130,20 @@ gain an understanding of how it would conceptually work. Spiking is followed
 by stepping back and, with the new understanding of a piece of logic,
 following TDD to slowly introduce the logic into the system.
 
+#### Benefits of TDD
+
+- "A change in one place can affect behavior someplace else; unless we have a
+    test in place, we might never know about it." -
+    *Working Effectively with Legacy Code*
+- "We know that we should refactor it to make it more understandable, but then
+    there is that issue of testing again. If we don’t have tests, how do we know
+    that we are refactoring correctly?" --
+    *Working Effectively with Legacy Code*
+
 ---
+### Releases
 
-## Releases
-
-### Small and frequent releases
+#### Small and frequent releases
 
 Code that is checked in to the version control system should be built
 (incuding running of tests, packaging, publishing artifacts) by a continuous
@@ -131,7 +160,15 @@ On every commit to `master`...
 - Publish
 - Deploy
 
-## Technical retrospectives
+Addresses Risks:
+
+![Schedule Slippage](https://img.shields.io/badge/Risk-Schedule_Slippage-red.svg)
+
+![Project Cancelled](https://img.shields.io/badge/Risk-Project_Cancelled-red.svg)
+
+![Business Changes](https://img.shields.io/badge/Risk-Business_Changes-red.svg)
+
+### Technical retrospectives
 
 To be able to learn effectively if a process or a technique is working or not,
 it is important to hold technical retrospectives
