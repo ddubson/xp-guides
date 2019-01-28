@@ -1,6 +1,7 @@
-# Extreme Programming
+# Extreme Programming (XP)
 
 - [Why XP?](#why-xp)
+- [What is XP?](#what-is-xp)
 - [XP Values](#values)
 - [Practices](#practices)
   - [Balanced Team](#balanced-team)
@@ -14,7 +15,7 @@
     - [Spiking](#spiking)
     - [Benefits of TDD](#benefits-of-tdd)
   - [Releases](#releases)
-    - [Small + Frequent](#small-and-frequent-releases)
+    - [Short release cycles](#short-release-cycles)
   - [Technical Retrospectives](#technical-retrospectives)
 
 ## Why XP
@@ -39,6 +40,17 @@ Software development involves a great amount of **RISK** in various forms:
 - **Staff turnover** - developers leave the project, potentially because of
     the underlying issues in the software.
 
+XP seeks to address each of the risks outlined above, and will be described below.
+
+> **When should I use XP?**
+>
+> When requirements are vague or change frequently.
+
+## What is XP
+
+XP is a software development discipline that addresses risk at all levels of the
+development process.
+
 ## Values
 
 The five core values of Extreme Programming are:
@@ -49,7 +61,6 @@ The five core values of Extreme Programming are:
 - Respect
 - Courage
 
----
 ## Practices
 
 ### Balanced team
@@ -57,10 +68,11 @@ The five core values of Extreme Programming are:
 An autonomous team that has people with a variety of skills and perspectives
 that work together towards a common goal.
 
----
 ### Iteration Planning
 
 TBD
+
+(Highest priority features first approach)
 
 #### Estimation
 
@@ -70,7 +82,6 @@ Addresses Risks:
 
 ![Staff Turnover](https://img.shields.io/badge/Risk-Staff_Turnover-red.svg)
 
----
 ### Pair programming
 
 ![Communication](https://img.shields.io/badge/Value-Communication-brightgreen.svg)
@@ -95,8 +106,9 @@ then the next person writes the logic for that failing test. And so forth.
 - Better conversation about what is being built and what is needed and
     what is not.
 
----
 ### Test-Driven development
+
+![Simplicity](https://img.shields.io/badge/Value-Simplicity-brightgreen.svg)
 
 Test-driven development is an approach to software development in which for
 any given slice of logic to be built in the software system, the test for that
@@ -140,10 +152,9 @@ following TDD to slowly introduce the logic into the system.
     that we are refactoring correctly?" --
     *Working Effectively with Legacy Code*
 
----
 ### Releases
 
-#### Small and frequent releases
+#### Short release cycles
 
 Code that is checked in to the version control system should be built
 (incuding running of tests, packaging, publishing artifacts) by a continuous
@@ -179,3 +190,9 @@ and should be scrapped.
 This is also a place to perform show+tell by developers to showcase
 some new and interesting things in the code that every one should be
 on the same page about.
+
+## References
+
+- [Extreme Programming Explained: Embrace Change
+    (2nd Ed., 2004) - Cynthia Andres,
+    Kent Beck](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
