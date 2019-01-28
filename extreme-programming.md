@@ -1,5 +1,28 @@
 # Extreme Programming
 
+- [Why XP?](#why??)
+- [XP Values](#values)
+- [Practices](#practices)
+    - [Balanced Team](#balanced-team)
+    - [Pair Programming](#pair-programming)
+        - [Ping-Pong Technique](#ping-pong-technique)
+    - [TDD](#test-driven-development)
+        - [Red-Green-Refactor](#red-green-refactor-loop)
+        - [Spiking](#spiking)
+    - [Releases](#releases)
+        - [Small + Frequent](#small-and-frequent-releases)
+    - [Technical Retrospectives](#technical-retrospectives)
+
+## Why??
+
+Software development involves a great amount of **RISK** in various forms:
+
+-   **Schedule slippage** - deadline is not met, and customers are not happy because 
+they have to wait!
+-   **Project cancelled** - the software never makes it to production due to too 
+many delays or other factors
+-   **System goes sour** - ..
+
 ## Values
 
 The five core values of Extreme Programming are:
@@ -31,8 +54,7 @@ Ping Pong pairing is the practice in which one developer writes a failing test, 
 - Better conversation about what is being built and what is needed and what is not.
 
 ---
-Test-Driven development
----
+## Test-Driven development
 
 Test-driven development is an approach to software development in which for any given slice of logic to be built in the software system, the test for that logic is written first, and only then is the actual logic written to satisfy the test case.
 
@@ -69,8 +91,7 @@ On every commit to `master`...
 - Publish
 - Deploy
 
-Technical retrospectives
----
+### Technical retrospectives
 
 To be able to learn effectively if a process or a technique is working or not, it is important to hold technical retrospectives (i.e. 'tech forums', 'techtros') to discuss and acknowledge winning strategies and techniques, as well as things that are just not working and should be scrapped.
 
