@@ -22,8 +22,20 @@ Software development involves a great amount of **RISK** in various forms:
 - **Schedule slippage** - deadline is not met, and customers are not happy
     because they have to wait!
 - **Project cancelled** - the software never makes it to production due
-    to too many delays or other factors
-- **System goes sour** - ..
+    to too many delays or other factors.
+- **System goes sour** - system is put into production, but after some time,
+    the cost of making changes or number of bugs (defect rate) rises to the
+    point of the system needing to be replaced.
+- **Defect rate** - software is put into production, but it isn't used due
+    to the defects
+- **Business misunderstood** - software is put into production, but it does not
+    solve the business problem proposed originally.
+- **Business changes** - software into production, but business problem it was
+    designed to solve was replaced by another more pressing problem.
+- **False feature rich** - lots of features, but none that provide actual
+    customer value.
+- **Staff turnover** - developers leave the project, potentially because of
+    the underlying issues in the software.
 
 ## Values
 
