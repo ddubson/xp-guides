@@ -1,5 +1,6 @@
 # Extreme Programming (XP)
 
+- [Principles, Values, Practices](#principles-values-practices)
 - [Why XP?](#why-xp)
 - [What is XP?](#what-is-xp)
 - [XP Values](#values)
@@ -17,6 +18,15 @@
   - [Releases](#releases)
     - [Short release cycles](#short-release-cycles)
   - [Technical Retrospectives](#technical-retrospectives)
+
+## Principles, Values, Practices
+
+__Principles are domain-specific guidelines for life.__ [1]
+
+__Values are the roots of the things we like and don't like
+    in a situation.__ [1]
+
+__Practices are evidence of values.__ [1]
 
 ## Why XP
 
@@ -51,7 +61,15 @@ XP seeks to address each of the risks outlined above, and will be described belo
 XP is a software development discipline that addresses risk at all levels of the
 development process.
 
+__Stay aware. Adapt. Change.__ [1]
+
+__You don't wait a long time to find out if you were going the wrong way.__ [1]
+
 ## Values
+
+__Values bring purpose to practices__ [1]
+
+Values drive practices.
 
 The five core values of Extreme Programming are:
 
@@ -145,14 +163,14 @@ following TDD to slowly introduce the logic into the system.
 #### Benefits of TDD
 
 - "A change in one place can affect behavior someplace else; unless we have a
-    test in place, we might never know about it." -
-    *Working Effectively with Legacy Code*
+    test in place, we might never know about it." [2]
 - "We know that we should refactor it to make it more understandable, but then
     there is that issue of testing again. If we don’t have tests, how do we know
-    that we are refactoring correctly?" --
-    *Working Effectively with Legacy Code*
+    that we are refactoring correctly?" -- [2]
 
 ### Releases
+
+![Feedback](https://img.shields.io/badge/Value-Feedback-brightgreen.svg)
 
 #### Short release cycles
 
@@ -193,6 +211,7 @@ on the same page about.
 
 ## References
 
-- [Extreme Programming Explained: Embrace Change
-    (2nd Ed., 2004) - Cynthia Andres,
-    Kent Beck](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
+1. [Extreme Programming Explained: Embrace Change (2nd Ed., 2004) -
+    Cynthia Andres, Kent Beck](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
+2. [Working Effectively with Legacy Code -
+    Michael Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052)
