@@ -11,9 +11,12 @@
   - [Courage](#courage)
 - [XP Principles](#xp-principles)
 - [Practices](#practices)
+  - [Sit Together](#sit-together)
+  - [Whole Team](#whole-team)
   - [Balanced Team](#balanced-team)
   - [Iteration Planning](#iteration-planning)
     - [Estimation](#estimation)
+  - [Weekly Cycle](#weekly-cycle)
   - [Pair Programming](#pair-programming)
     - [Ping-Pong Technique](#ping-pong-technique)
     - [Benefits of PP](#benefits-of-pair-programming)
@@ -129,6 +132,17 @@ __The courage to speak truths, pleasant or unpleasant, fosters communication and
 
 ## Practices
 
+### Sit Together
+
+As a team, best results and outcomes from being within close proximity to each
+other so that constant lines of communication are opened.
+
+__the more face time you have, the more humane and productive the project__ [Source][1]
+
+### Whole Team
+
+Include all the team members to instill a sense of wholeness.
+
 ### Balanced team
 
 An autonomous team that has people with a variety of skills and perspectives
@@ -142,7 +156,8 @@ TBD
 
 #### Estimation
 
-TBD
+Estimation gives business and technical perspectives a chance to interact, creating
+value early in the process to be able to estimate trajectory
 
 Addresses Risks:
 
@@ -167,11 +182,19 @@ then the next person writes the logic for that failing test. And so forth.
 
 #### Benefits of Pair Programming
 
+- Keep each other on the task at hand
 - Diffusion of knowledge
 - Cleaner and better designed code through lively discussion of patterns and
     techniques to use
 - Better conversation about what is being built and what is needed and
-    what is not.
+    what is not
+- Hold each other accountable to team practices
+
+### Weekly Cycle
+
+Plan work one week at a time, utilizing [iteration planning](#iteration-planning)
+to plan out a week's worth of stories, which can be assigned as stories get completed
+by pairs of developers.
 
 ### Test-Driven development
 
