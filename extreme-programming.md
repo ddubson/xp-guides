@@ -148,20 +148,36 @@ Include all the team members to instill a sense of wholeness.
 An autonomous team that has people with a variety of skills and perspectives
 that work together towards a common goal.
 
-### Iteration Planning
+### Story Planning
 
-TBD
+Plan using units of customer-visible functionality
 
 (Highest priority features first approach)
 
 #### Estimation
 
-Estimation gives business and technical perspectives a chance to interact, creating
+Early estimation gives business and technical perspectives a chance to interact, creating
 value early in the process to be able to estimate trajectory
+
+Early estimation gets everyone to think about how to get the greatest return
+from the smallest investment
 
 Addresses Risks:
 
 ![Staff Turnover](https://img.shields.io/badge/Risk-Staff_Turnover-red.svg)
+
+### Story Size
+
+Make sure the stories written address the single smallest unit of value delivered to the
+customer. The smaller the story, the easier it is to estimate, and deliver as compared
+to larger stories, which can be inherently more complex.
+
+### Slack
+
+Include minor tasks that can be dropped if you fall behind schedule. Stories can be delivered
+if you have additional time, or bumped over to the next cycle if no time
+is left. This 'slack' can go a long way to boosting morale and defusing the pressure
+that software teams have on delivering "the world" by a certain deadline.
 
 ### Pair programming
 
@@ -199,20 +215,28 @@ by pairs of developers.
 ### Test-Driven development
 
 ![Simplicity](https://img.shields.io/badge/Value-Simplicity-brightgreen.svg)
+![Feedback](https://img.shields.io/badge/Value-Feedback-brightgreen.svg)
 
 Test-driven development is an approach to software development in which for
 any given slice of logic to be built in the software system, the test for that
 logic is written first, and only then is the actual logic written to satisfy
 the test case.
 
+Addresses:
+
+- **Scope Creep** - explicit test cases drive the functionality that you're working on without
+    letting scope extend past what you are working on
+- **Coupling and cohesion** - test driving logic inherently creates a testable system which
+    creates a well designed system that has low coupling, and high cohesion
+- **Trust** - gives trust to other team members because everyone's written logic is tested
+    and the fear of changing a piece of code is vastly reduced due to the tests in place.
+- **Rhythm** - each step along the way in the story is much clearer with TDD since tests
+    guide your progression and it is much easier to stick to the path to completion.
+
 #### Run on every change
 
 Tests that are written and made to pass, are thereafter run on every single
 change to make sure that the system is as per specification.
-
-Addresses Risks:
-
-![System Goes Sour](https://img.shields.io/badge/Risk-System_Goes_Sour-red.svg)
 
 #### Red-Green Refactor Loop
 
@@ -240,6 +264,10 @@ following TDD to slowly introduce the logic into the system.
     there is that issue of testing again. If we don’t have tests, how do we know
     that we are refactoring correctly?" [Source][2]
 
+Addresses Risks:
+
+![System Goes Sour](https://img.shields.io/badge/Risk-System_Goes_Sour-red.svg)
+
 ### Releases
 
 ![Feedback](https://img.shields.io/badge/Value-Feedback-brightgreen.svg)
@@ -266,6 +294,19 @@ Addresses Risks:
 ![Schedule Slippage](https://img.shields.io/badge/Risk-Schedule_Slippage-red.svg)
 ![Project Cancelled](https://img.shields.io/badge/Risk-Project_Cancelled-red.svg)
 ![Business Changes](https://img.shields.io/badge/Risk-Business_Changes-red.svg)
+
+### Quick Builds (10-minute build rule)
+
+Automatically build the whole system and run the tests in 10 minutes or less.
+
+Longer builds tend to be avoided, defeating the purpose of having builds, and
+undermining the value of Feedback.
+
+### Continuous Integration
+
+Integrate changes as they are completed, as early and often as possible to get feedback
+as soon as possible on the health of the system, and the changes made in a story
+that might have affected the overall system.
 
 ### Technical retrospectives
 
